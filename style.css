@@ -1,42 +1,71 @@
+/* General Page Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fff;
+    font-family: 'Lato', sans-serif;
     color: #333;
-}
-
-h1, h2, h3 {
-    color: #d63384; /* Soft pink */
-}
-
-a {
-    color: #ff5a91; /* Pink links */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #ff2d75; /* Darker pink on hover */
-}
-
-nav a {
-    color: #ff5a91;
-    font-weight: bold;
-}
-
-.profile-pic {
-    width: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 10px auto;
-}
-
-header {
-    background-color: #fff0f5;
+    background-color: #fff;
+    margin: 40px auto;
+    max-width: 800px;
     padding: 20px;
-    border-bottom: 3px solid #ff5a91;
+    line-height: 1.6;
 }
 
+/* Header Styling */
+header {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #d63384;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #d63384;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Job & Project Formatting */
+.job {
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+/* List Formatting */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Align Dates to the Right */
+.right {
+    float: right;
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Footer Styling */
 footer {
-    background-color: #fff0f5;
-    padding: 10px;
+    text-align: center;
     margin-top: 20px;
+    padding-top: 10px;
+    border-top: 2px solid #d63384;
+    font-size: 0.9em;
 }
