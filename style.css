@@ -21,18 +21,23 @@ nav {
 }
 
 nav a {
-    color: #d38ba6; /* Softer pink */
+    color: #d63384; /* Soft berry pink */
     font-weight: bold;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 nav a:hover {
-    color: #c57595; /* Slightly darker pink on hover */
+    color: #ff5a91; /* Lighter pink on hover */
 }
 
+/* 🌟 Header Section */
 .header-container {
-    background: rgba(231, 198, 182, 0.85); /* Soft Beige-Pink */
-    backdrop-filter: blur(10px);
-    border-bottom: 3px solid #D9A392; /* Warm Rose Pink */
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 240, 245, 0.85); /* Slightly transparent soft pink */
+    border-bottom: 3px solid #d63384;
 }
 
 /* Profile Photo */
@@ -50,9 +55,12 @@ nav a:hover {
 
 /* 🌟 Improve Titles and Headers */
 h1, h2 {
-    border-bottom: 2px solid #d38ba6; /* Softer pink to match the background */
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #222;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 
 /* 🌟 Project and Experience Sections */
 section {
