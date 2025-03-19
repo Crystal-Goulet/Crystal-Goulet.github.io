@@ -21,12 +21,12 @@ nav {
 }
 
 nav a {
-    color: #D9A392; /* Warm Rose Pink */
+    color: #d38ba6; /* Softer pink */
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #8E5A4B; /* Deep Reddish Brown */
+    color: #c57595; /* Slightly darker pink on hover */
 }
 
 .header-container {
@@ -40,7 +40,7 @@ nav a:hover {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 3px solid #8E5A4B;
+    border: 3px solid #d63384;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -50,7 +50,7 @@ nav a:hover {
 
 /* 🌟 Improve Titles and Headers */
 h1, h2 {
-    border-bottom: 2px solid #B97C6A; /* Muted Brownish Pink */
+    border-bottom: 2px solid #d38ba6; /* Softer pink to match the background */
 }
 
 
