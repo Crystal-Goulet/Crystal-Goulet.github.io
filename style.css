@@ -1,8 +1,11 @@
 /* 🌟 Apply the Soft Pink Gradient Background */
 body {
     font-family: 'Poppins', sans-serif;
-    background: url('your-background-image.jpg') no-repeat center center fixed;
+    background-image: url('assets/background.jpg');
     background-size: cover;
+    background-attachment: fixed; /* Enables parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
     color: #333;
     margin: 0;
     padding: 0;
