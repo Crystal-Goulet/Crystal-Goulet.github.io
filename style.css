@@ -71,21 +71,23 @@ h2 {
     color: #222;
 }
 
-/* Job & Project Formatting */
-.job {
-    margin-bottom: 20px;
+/* Dates Formatting (Move to Right) */
+.date {
+    float: right;
+    font-size: 0.9em;
+    color: #777; /* Soft gray color to separate from title */
+    font-weight: normal;
 }
 
+/* Job & Project Titles */
 h3 {
     font-size: 1.2em;
-    color: #d63384;
+    color: #d63384; /* Keep pink title */
     margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-p {
-    margin: 5px 0;
-}
-
 /* List Formatting */
 ul {
     padding-left: 20px;
