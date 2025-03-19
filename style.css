@@ -9,15 +9,17 @@ body {
     line-height: 1.6;
 }
 
-/* Header Styling */
+/* Header Styling with Light Pink Banner */
 header {
     text-align: center;
     font-size: 1.8em;
     font-weight: bold;
-    padding-bottom: 20px;
+    padding: 20px;
+    background-color: #ffe3ed; /* Light pink background */
     border-bottom: 3px solid #d63384;
     color: #222;
 }
+
 
 /* Navigation Bar */
 nav {
