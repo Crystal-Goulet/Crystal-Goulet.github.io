@@ -1,23 +1,40 @@
-/* 🌟 Add a Gradient Background for Depth */
+/* 🌟 Apply the Soft Pink Gradient Background */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #f8d7e3, #ffe3ed); /* Soft pink gradient */
+    background: url('your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
-/* 🌟 Improve Header Design */
+/* 🌟 Navigation Bar - Adjust Colors to Match */
+nav {
+    background: rgba(255, 240, 245, 0.8); /* Soft pink with transparency */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #d63384; /* Soft berry pink */
+    font-weight: bold;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff5a91; /* Lighter pink on hover */
+}
+
+/* 🌟 Header Section */
 .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: rgba(255, 255, 255, 0.8); /* Glass effect */
-    padding: 40px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 240, 245, 0.85); /* Slightly transparent soft pink */
     border-bottom: 3px solid #d63384;
-    backdrop-filter: blur(10px); /* Glassmorphism Effect */
 }
 
 /* Profile Photo */
@@ -33,7 +50,7 @@ body {
     transform: scale(1.1);
 }
 
-/* 🌟 Make Titles Pop */
+/* 🌟 Improve Titles and Headers */
 h1, h2 {
     font-size: 2em;
     font-weight: bold;
@@ -42,124 +59,30 @@ h1, h2 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* 🌟 Subtle Fade-in Animations */
+/* 🌟 Project and Experience Sections */
 section {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.8s ease-in-out forwards;
+    background: rgba(255, 255, 255, 0.8); /* Soft white overlay for readability */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    width: 90%;
+    max-width: 800px;
 }
 
-/* 🌟 Animation Keyframes */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* 🌟 Improve Navigation */
-nav {
-    text-align: center;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(8px);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-nav a {
-    color: #d63384;
-    font-weight: bold;
-    margin: 0 15px;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-nav a:hover {
-    color: #ff5a91;
-}
-
-
-/* Header with Image on Left */
-.header-container {
-    display: flex;
-    align-items: center;
-    background-color: #ffe3ed;
-    padding: 30px;
-    border-bottom: 3px solid #d63384;
-}
-
-.photo-container {
-    flex: 1;
-    text-align: left;
-    padding-left: 20px;
-}
-
-.text-container {
-    flex: 2;
-    text-align: left;
-}
-
-.profile-pic {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: #fff;
-    border: 3px solid #d63384;
-}
-
-/* Section Styling */
-section {
-    margin-bottom: 30px;
-}
-
-h2 {
-    text-transform: uppercase;
-    border-bottom: 2px solid #d63384;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    font-size: 1.5em;
-    color: #222;
-}
-
-/* Dates Formatting (Move to Right) */
+/* 🌟 Adjust Dates in Projects and Experience */
 .date {
     float: right;
-    font-size: 0.9em;
-    color: #777; /* Soft gray color to separate from title */
     font-weight: normal;
+    font-size: 0.9em;
+    color: #777; /* Subtle gray */
 }
 
-/* Job & Project Titles */
-h3 {
-    font-size: 1.2em;
-    color: #d63384; /* Keep pink title */
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-/* List Formatting */
-ul {
-    padding-left: 20px;
-}
-
-ul li {
-    margin-bottom: 5px;
-}
-
-/* Footer */
+/* 🌟 Footer */
 footer {
     text-align: center;
-    margin-top: 30px;
-    padding-top: 10px;
-    border-top: 2px solid #d63384;
+    padding: 20px;
+    background: #d63384;
+    color: white;
     font-size: 0.9em;
-    color: #333;
 }
