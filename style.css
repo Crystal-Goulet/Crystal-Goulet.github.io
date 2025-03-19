@@ -1,31 +1,21 @@
-/* General Page Styling */
+/* General Styling */
 body {
     font-family: 'Lato', sans-serif;
     color: #333;
     background-color: #fff;
     margin: 40px auto;
-    max-width: 800px;
+    max-width: 900px;
     padding: 20px;
     line-height: 1.6;
 }
 
-/* Header Styling with Light Pink Banner */
-header {
-    text-align: center;
-    font-size: 1.8em;
-    font-weight: bold;
-    padding: 20px;
-    background-color: #ffe3ed; /* Light pink background */
-    border-bottom: 3px solid #d63384;
-    color: #222;
-}
-
-
 /* Navigation Bar */
 nav {
     text-align: center;
-    margin-bottom: 20px;
     font-size: 1.1em;
+    background-color: #ffe3ed;
+    padding: 10px;
+    border-bottom: 3px solid #d63384;
 }
 
 nav a {
@@ -37,6 +27,34 @@ nav a {
 
 nav a:hover {
     color: #ff2d75;
+}
+
+/* Header with Image on Left */
+.header-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffe3ed;
+    padding: 30px;
+    border-bottom: 3px solid #d63384;
+}
+
+.photo-container {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.text-container {
+    flex: 2;
+    text-align: left;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #d63384;
 }
 
 /* Section Styling */
@@ -59,7 +77,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #d63384;
     margin-bottom: 5px;
 }
@@ -77,15 +95,7 @@ ul li {
     margin-bottom: 5px;
 }
 
-/* Align Dates to the Right */
-.right {
-    float: right;
-    font-weight: normal;
-    font-size: 0.9em;
-    color: #555;
-}
-
-/* Footer Styling */
+/* Footer */
 footer {
     text-align: center;
     margin-top: 30px;
@@ -93,24 +103,4 @@ footer {
     border-top: 2px solid #d63384;
     font-size: 0.9em;
     color: #333;
-}
-
-/* Profile Picture */
-.profile-pic {
-    width: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
-    border: 3px solid #d63384;
-}
-
-/* Links */
-a {
-    color: #d63384;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #ff2d75;
-    text-decoration: underline;
 }
