@@ -1,4 +1,4 @@
-/* General Page Styling */
+/* General Styling */
 body {
     font-family: 'Lato', sans-serif;
     color: #333;
@@ -9,7 +9,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header Styling */
+/* Header */
 header {
     text-align: center;
     font-size: 1.5em;
@@ -18,7 +18,24 @@ header {
     border-bottom: 3px solid #d63384;
 }
 
-/* Section Styling */
+/* Navigation Bar */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #d63384;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff2d75;
+}
+
+/* Section Formatting */
 section {
     margin-bottom: 20px;
 }
@@ -30,7 +47,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Job & Project Formatting */
+/* Job & Project Styling */
 .job {
     margin-bottom: 15px;
 }
@@ -61,7 +78,7 @@ ul li {
     color: #555;
 }
 
-/* Footer Styling */
+/* Footer */
 footer {
     text-align: center;
     margin-top: 20px;
