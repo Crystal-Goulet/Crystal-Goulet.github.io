@@ -1,120 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Crystal Goulet</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Dark Mode Toggle -->
+    <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
     <!-- Navigation Menu -->
     <nav>
-        <a href="#education">Education</a> |
-        <a href="#projects">Projects</a> |
-        <a href="#experience">Experience</a> |
-        <a href="#skills">Skills</a> |
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Header Section with Glassmorphism & Animation -->
+    <!-- Header Section -->
     <header class="header-container">
         <div class="photo-container">
-            <img src="profile.jpg" alt="Your Photo" class="profile-pic">
+            <img src="assets/profile.jpg" alt="Your Photo" class="profile-pic">
         </div>
         <div class="text-container">
             <h1>Crystal Goulet</h1>
             <p>UC Berkeley | Data Science | AI & Business Analytics</p>
+            <a href="assets/Crystal_Goulet_Resume.pdf" class="download-btn" target="_blank">Download Resume</a>
         </div>
     </header>
 
     <!-- Education Section -->
-    <section id="education">
+    <section id="education" class="fade-in">
         <h2>Education</h2>
         <p><strong>University of California, Berkeley, CA</strong> <span class="right">December 2024</span></p>
         <p>Bachelor of Arts in Data Science, Business/Industrial Analytics</p>
         <p><strong>Relevant Coursework:</strong> Introduction to AI, Data Structures, Probability, Healthcare Analytics, Business Analytics</p>
     </section>
 
-<!-- Projects Section -->
-<section id="projects">
-    <h2>Highlighted Projects</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+        <h2>Highlighted Projects</h2>
 
-    <div class="job">
-        <h3>Machine Learning - MNIST & Language Identification <span class="date">Summer 2024</span></h3>
-        <p><em>Artificial Intelligence Class</em></p>
-        <ul>
-            <li>Developed and fine-tuned neural networks using PyTorch.</li>
-            <li>Achieved 92.55% accuracy with feature engineering & activation tuning.</li>
-        </ul>
-        <a href="https://github.com/yourusername/ml-project">View GitHub Repo</a>
-    </div>
+        <div class="job">
+            <h3>Machine Learning - MNIST & Language Identification <span class="date">Summer 2024</span></h3>
+            <p><em>Artificial Intelligence Class</em></p>
+            <ul>
+                <li>Developed and fine-tuned neural networks using PyTorch.</li>
+                <li>Achieved 92.55% accuracy with feature engineering & activation tuning.</li>
+            </ul>
+            <a href="https://github.com/cmgoulet/ml-project" target="_blank">View GitHub Repo</a>
+        </div>
 
-    <div class="job">
-        <h3>Mental Health in the Tech Industry (Data Analysis) <span class="date">Spring 2023</span></h3>
-        <p><em>SAAS Club Decal</em></p>
-        <ul>
-            <li>Led exploratory data analysis on 1M+ data points.</li>
-            <li>Uncovered key trends to improve health policies.</li>
-        </ul>
-        <a href="https://github.com/yourusername/mental-health-analysis">View GitHub Repo</a>
-    </div>
+        <div class="job">
+            <h3>Mental Health in the Tech Industry (Data Analysis) <span class="date">Spring 2023</span></h3>
+            <p><em>SAAS Club Decal</em></p>
+            <ul>
+                <li>Led exploratory data analysis on 1M+ data points.</li>
+                <li>Uncovered key trends to improve health policies.</li>
+            </ul>
+            <a href="https://github.com/cmgoulet/mental-health-analysis" target="_blank">View GitHub Repo</a>
+        </div>
 
-    <div class="job">
-        <h3>Predictive Modeling for Business Analytics <span class="date">Summer 2022</span></h3>
-        <p><em>Business Analytics Class</em></p>
-        <ul>
-            <li>Built stochastic models to assess financial risks.</li>
-            <li>Used optimization techniques for capital allocation.</li>
-        </ul>
-        <a href="https://github.com/yourusername/business-analytics">View GitHub Repo</a>
-    </div>
-</section>
-
-<!-- Experience Section -->
-<section id="experience">
-    <h2>Work Experience</h2>
-
-    <div class="job">
-        <h3>Data Analytics Associate <span class="date">Spring 2022 - Fall 2023</span></h3>
-        <p><em>Associated Students at UC Berkeley, Senate</em></p>
-        <ul>
-            <li>Conducted sentiment analysis on student surveys using NLP.</li>
-            <li>Influenced policy changes leading to increased student engagement.</li>
-        </ul>
-    </div>
-
-    <div class="job">
-        <h3>Business Analytics Intern <span class="date">Summer 2022</span></h3>
-        <p><em>Thoroughbred Research Company</em></p>
-        <ul>
-            <li>Managed data collection, quality assurance, and research operations.</li>
-            <li>Optimized workflows for improved efficiency and data reliability.</li>
-        </ul>
-    </div>
-</section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Programming:</strong> Python (NumPy, Pandas, PyTorch), SQL, Java, MATLAB, JavaScript</li>
-            <li><strong>Data Engineering:</strong> SQL, Snowflake, MongoDB, ETL Pipelines, Data Cleaning</li>
-            <li><strong>Machine Learning:</strong> Neural Networks, Bayesian Methods, Time Series Forecasting</li>
-            <li><strong>Visualization:</strong> Tableau, Matplotlib, Jupyter Notebooks</li>
-        </ul>
+        <div class="job">
+            <h3>Predictive Modeling for Business Analytics <span class="date">Summer 2022</span></h3>
+            <p><em>Business Analytics Class</em></p>
+            <ul>
+                <li>Built stochastic models to assess financial risks.</li>
+                <li>Used optimization techniques for capital allocation.</li>
+            </ul>
+            <a href="https://github.com/cmgoulet/business-analytics" target="_blank">View GitHub Repo</a>
+        </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p><strong>Email:</strong> <a href="mailto:cmgoulet@berkeley.edu">your.email@example.com</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/crystal-goulet">linkedin.com/in/yourname</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/crystal-goulet">github.com/yourusername</a></p>
-    </section>
+    <!-- Experience Section -->
+    <section id="experience" class="fade-in">
+        <h2>Work Experience</h2>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Crystal Goulet. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+        <div class="job">
+            <h3>Data Analytics Associate <span class="date">Spring 2022 – Fall 2023</span></h3>
+            <p><em>Associated Students at UC Berkeley, Senate</em></p>
+            <ul>
+                <li>Conducted sentiment analysis on student surveys using

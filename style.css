@@ -1,28 +1,48 @@
-/* 🌟 Apply the Soft Pink Gradient Background */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --accent-color: #945446;
+    --link-hover: #8e3b35;
+    --glass-bg: rgba(255, 255, 255, 0.8);
+}
+
+body.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #f1f1f1;
+    --accent-color: #c8a29f;
+    --glass-bg: rgba(30, 30, 30, 0.7);
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-image: url('assets/background.jpg');
     background-size: cover;
-    background-attachment: fixed; /* Enables parallax effect */
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    color: #333;
+    color: var(--text-color);
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    scroll-behavior: smooth;
+    transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* 🌟 Navigation Bar - Adjust Colors to Match */
 nav {
-    background: rgba(255, 255, 255); 
+    background: var(--bg-color);
     padding: 15px;
     text-align: center;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #945446;
+    border-bottom: 3px solid var(--accent-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
-    color: #4b0905;
+    color: var(--accent-color);
     font-weight: bold;
     margin: 0 15px;
     text-decoration: none;
@@ -30,23 +50,29 @@ nav a {
 }
 
 nav a:hover {
-    color: #8e3b35; /* Lighter on hover */
+    color: var(--link-hover);
 }
 
-/* 🌟 Header Section */
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
 .header-container {
     text-align: center;
     padding: 60px 20px;
-    background: rgba(255, 255, 255, 0.8); /* Slightly transparent */
-    border-bottom: 3px solid #945446;
+    background: var(--glass-bg);
+    border-bottom: 3px solid var(--accent-color);
 }
 
-/* Profile Photo */
 .profile-pic {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 3px solid #945446;
+    border: 3px solid var(--accent-color);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -54,39 +80,46 @@ nav a:hover {
     transform: scale(1.1);
 }
 
-/* 🌟 Improve Titles and Headers */
 h1, h2 {
-    font-size: 2em;
     font-weight: bold;
     text-align: center;
-    color: #222;
+    color: var(--text-color);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* 🌟 Project and Experience Sections */
 section {
-    background: rgba(255, 255, 255, 0.8); /* Soft white overlay for readability */
+    background: var(--glass-bg);
     padding: 20px;
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
     width: 90%;
     max-width: 800px;
+    transition: transform 0.3s ease, opacity 0.6s ease;
 }
 
-/* 🌟 Adjust Dates in Projects and Experience */
 .date {
     float: right;
     font-weight: normal;
     font-size: 0.9em;
-    color: #777; /* Subtle gray */
+    color: #777;
 }
 
-/* 🌟 Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: #ffffff;
-    color: #4b0905;
+    background: var(--bg-color);
+    color: var(--accent-color);
     font-size: 0.9em;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
