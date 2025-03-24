@@ -1,133 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Crystal Goulet</title>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crystal Goulet</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Dark Mode Toggle -->
-    <div class="toggle-container">
-       <span class="toggle-label">Dark Mode</span>
-       <label class="switch">
-        <input type="checkbox" id="darkModeToggle" />
-        <span class="slider round"></span>
-      </label>
+  <!-- 🌙 Dark Mode Toggle -->
+  <div class="toggle-container">
+    <span class="toggle-label">Dark Mode</span>
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle" />
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <!-- 🌐 Navigation Menu -->
+  <nav>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#extras">Extras</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- 👤 Header Section -->
+  <header class="header-container">
+    <div class="photo-container">
+      <img src="assets/profilepic.jpg" alt="Your Photo" class="profile-pic">
     </div>
-  
-    <!-- Navigation Menu -->
-    <nav>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <div class="text-container">
+      <h1>Crystal Goulet</h1>
+      <p>UC Berkeley | Data Science | AI & Business Analytics</p>
+      <a href="assets/Crystal_Goulet_Resume.pdf" class="download-btn" target="_blank">Download Resume</a>
+    </div>
+  </header>
 
-    <!-- Header Section -->
-    <header class="header-container">
-        <div class="photo-container">
-            <img src="assets/profilepic.jpg" alt="Your Photo" class="profile-pic">
-        </div>
-        <div class="text-container">
-            <h1>Crystal Goulet</h1>
-            <p>UC Berkeley | Data Science | AI & Business Analytics</p>
-            <a href="assets/Crystal_Goulet_Resume.pdf" class="download-btn" target="_blank">Download Resume</a>
-        </div>
-    </header>
+  <!-- 🎓 Education -->
+  <section id="education" class="fade-in">
+    <h2>Education</h2>
+    <p><strong>University of California, Berkeley</strong> <span class="right">May 2024</span></p>
+    <p>B.A. in Data Science, Business/Industrial Analytics</p>
 
-    <!-- Education Section -->
-    <section id="education" class="fade-in">
-        <h2>Education</h2>
-        <p><strong>University of California, Berkeley, CA</strong> <span class="right">December 2024</span></p>
-        <p>Bachelor of Arts in Data Science, Business/Industrial Analytics</p>
-        <p><strong>Relevant Coursework:</strong> Introduction to AI, Data Structures, Probability, Healthcare Analytics, Business Analytics</p>
-    </section>
+    <p><strong>Santa Barbara City College</strong> <span class="right">August 2021</span></p>
+    <p>A.A. in Science & Mathematics<br>
+    A.A. in Social & Behavioral Science<br>
+    A.A.-T in Economics</p>
 
-    <!-- Projects Section -->
-    <section id="projects" class="fade-in">
-        <h2>Highlighted Projects</h2>
+    <p><strong>Relevant Coursework:</strong> AI, Data Inference & Decisions, Computational Structures, Data Engineering, Optimization, Healthcare Analytics, Business Analytics, Probability, Statistics, Linear Algebra, Differential Equations, Engineering, Micro/Macro Econ (Honors), and more.</p>
+  </section>
 
-        <div class="job">
-            <h3>Machine Learning - MNIST & Language Identification <span class="date">Summer 2024</span></h3>
-            <p><em>Artificial Intelligence Class</em></p>
-            <ul>
-                <li>Developed and fine-tuned neural networks using PyTorch.</li>
-                <li>Achieved 92.55% accuracy with feature engineering & activation tuning.</li>
-            </ul>
-            <a href="https://github.com/cmgoulet/ml-project" target="_blank">View GitHub Repo</a>
-        </div>
+  <!-- 💡 Projects -->
+  <section id="projects" class="fade-in">
+    <h2>Highlighted Projects</h2>
 
-        <div class="job">
-            <h3>Mental Health in the Tech Industry (Data Analysis) <span class="date">Spring 2023</span></h3>
-            <p><em>SAAS Club Decal</em></p>
-            <ul>
-                <li>Led exploratory data analysis on 1M+ data points.</li>
-                <li>Uncovered key trends to improve health policies.</li>
-            </ul>
-            <a href="https://github.com/cmgoulet/mental-health-analysis" target="_blank">View GitHub Repo</a>
-        </div>
+    <div class="job">
+      <h3>Machine Learning - MNIST & Language Identification <span class="date">Summer 2024</span></h3>
+      <p><em>Artificial Intelligence Class</em></p>
+      <ul>
+        <li>Optimized deep learning models in PyTorch for classification.</li>
+        <li>Achieved 92.55% accuracy with feature tuning and batching.</li>
+      </ul>
+      <a href="https://github.com/cmgoulet/ml-project" target="_blank">View GitHub Repo</a>
+    </div>
 
-        <div class="job">
-            <h3>Predictive Modeling for Business Analytics <span class="date">Summer 2022</span></h3>
-            <p><em>Business Analytics Class</em></p>
-            <ul>
-                <li>Built stochastic models to assess financial risks.</li>
-                <li>Used optimization techniques for capital allocation.</li>
-            </ul>
-            <a href="https://github.com/cmgoulet/business-analytics" target="_blank">View GitHub Repo</a>
-        </div>
-    </section>
+    <div class="job">
+      <h3>Mental Health in the Tech Industry <span class="date">Spring 2023</span></h3>
+      <p><em>SAAS Club Decal</em></p>
+      <ul>
+        <li>Analyzed over 1M health inspection records with Pandas.</li>
+        <li>Drove data-backed decisions for policy improvement.</li>
+      </ul>
+      <a href="https://github.com/cmgoulet/mental-health-analysis" target="_blank">View GitHub Repo</a>
+    </div>
 
-     <!-- Experience Section -->
-     <section id="experience" class="fade-in">
-        <h2>Work Experience</h2>
+    <div class="job">
+      <h3>Predictive Business Modeling <span class="date">Summer 2022</span></h3>
+      <p><em>Business Analytics Class</em></p>
+      <ul>
+        <li>Built stochastic financial models to assess investment risks.</li>
+        <li>Applied optimization and sensitivity analysis to guide decisions.</li>
+      </ul>
+      <a href="https://github.com/cmgoulet/business-analytics" target="_blank">View GitHub Repo</a>
+    </div>
 
-        <div class="job">
-            <h3>Data Analytics Associate <span class="date">Spring 2022 – Fall 2023</span></h3>
-            <p><em>Associated Students at UC Berkeley, Senate</em></p>
-            <ul>
-                <li>Conducted sentiment analysis on student surveys using NLP.</li>
-                <li>Influenced policy changes leading to increased student engagement.</li>
-            </ul>
-        </div>
+    <div class="job">
+      <h3>Hulu Data Analyst Project <span class="date">Summer 2022</span></h3>
+      <ul>
+        <li>Performed EDA on inspection scores and business metrics.</li>
+        <li>Revealed patterns that improved health standards.</li>
+      </ul>
+    </div>
 
-        <div class="job">
-            <h3>Business Analytics Intern <span class="date">Summer 2022</span></h3>
-            <p><em>Thoroughbred Research Company</em></p>
-            <ul>
-                <li>Managed data collection, quality assurance, and research operations.</li>
-                <li>Optimized workflows for improved efficiency and data reliability.</li>
-            </ul>
-        </div>
-    </section>
+    <div class="job">
+      <h3>Production Control SQL Database <span class="date">Summer 2023</span></h3>
+      <p><em>Systems & Analysis Design</em></p>
+      <ul>
+        <li>Led team of 5 to plan, design, and implement SQL schema.</li>
+        <li>Improved data structure, consistency, and reporting capabilities.</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="fade-in">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Programming:</strong> Python (NumPy, Pandas, PyTorch), SQL, Java, MATLAB, JavaScript</li>
-            <li><strong>Data Engineering:</strong> SQL, Snowflake, MongoDB, ETL Pipelines, Data Cleaning</li>
-            <li><strong>Machine Learning:</strong> Neural Networks, Bayesian Methods, Time Series Forecasting</li>
-            <li><strong>Visualization:</strong> Tableau, Matplotlib, Jupyter Notebooks</li>
-        </ul>
-    </section>
+  <!-- 💼 Experience -->
+  <section id="experience" class="fade-in">
+    <h2>Work Experience</h2>
 
-    <!-- Contact Section -->
-    <section id="contact" class="fade-in">
-        <h2>Contact Me</h2>
-        <p><strong>Email:</strong> <a href="mailto:cmgoulet@berkeley.edu">cmgoulet@berkeley.edu</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/crystal-goulet" target="_blank">linkedin.com/in/crystal-goulet</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/cmgoulet" target="_blank">github.com/cmgoulet</a></p>
-    </section>
+    <div class="job">
+      <h3>Data Analytics Associate <span class="date">Spring 2022 – Fall 2023</span></h3>
+      <p><em>UC Berkeley Senate</em></p>
+      <ul>
+        <li>Applied NLP to student surveys to surface participation barriers.</li>
+        <li>Informed actionable policy change to improve inclusivity and engagement.</li>
+      </ul>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Crystal Goulet. All rights reserved.</p>
-    </footer>
-<script src="script.js"></script>
+    <div class="job">
+      <h3>Business Analytics Intern <span class="date">Summer 2022</span></h3>
+      <p><em>Thoroughbred Research Company</em></p>
+      <ul>
+        <li>Managed data QA for survey collection operations.</li>
+        <li>Increased data reliability by streamlining workflows.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Massage Therapist <span class="date">Spring 2015 – 2024</span></h3>
+      <p><em>Claremont/Ritz-Carlton</em></p>
+      <ul>
+        <li>Adapted to client needs in fast-paced wellness environment.</li>
+        <li>Provided therapeutic services and solutions with professionalism.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 🛠 Skills -->
+  <section id="skills" class="fade-in">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Programming & Tools:</strong> Python (NumPy, Pandas, PyTorch, TensorFlow, Scikit-learn), SQL, MATLAB, Java, JavaScript, Git/GitHub, Jupyter Notebooks, Visual Studio, IntelliJ</li>
+      <li><strong>Data Engineering:</strong> Snowflake, MongoDB, PostgreSQL, SQLite, ETL, Data Cleaning & Preprocessing</li>
+      <li><strong>Machine Learning:</strong> Neural Networks, Clustering (K-Means, KNN), Decision Trees, Regression, Bayesian Models, Time Series Forecasting</li>
+      <li><strong>Analytics & Research:</strong> EDA, Feature Engineering, A/B Testing, Multivariate Testing, Risk Modeling, Statistical Modeling, Financial Analysis</li>
+      <li><strong>Visualization:</strong> Tableau, Matplotlib</li>
+      <li><strong>Environments:</strong> Windows, MacOS, Linux, Bash, Kaggle</li>
+    </ul>
+  </section>
+
+  <!-- 🌱 Leadership & Extras -->
+  <section id="extras" class="fade-in">
+    <h2>Leadership & Extracurriculars</h2>
+    <ul>
+      <li><strong>Phi Theta Kappa Honors Society (Historian):</strong> Created digital archive and improved engagement.</li>
+      <li><strong>Math Club (President):</strong> Led student initiatives and collaborative problem-solving events.</li>
+      <li><strong>Women in Computer Science & Engineering (Project Manager):</strong> Managed events, budgets, and platforms for 200+ members.</li>
+      <li><strong>Energy Club (Member):</strong> Participated in clean energy advocacy and weekly discussion meetings.</li>
+    </ul>
+  </section>
+
+  <!-- 📬 Contact -->
+  <section id="contact" class="fade-in">
+    <h2>Contact Me</h2>
+    <p><strong>Email:</strong> <a href="mailto:cmgoulet@berkeley.edu">cmgoulet@berkeley.edu</a></p>
+    <p><strong>Phone:</strong> (480) 980-2215</p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/crystal-goulet" target="_blank">linkedin.com/in/crystal-goulet</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/cmgoulet" target="_blank">github.com/cmgoulet</a></p>
+  </section>
+
+  <!-- 🦶 Footer -->
+  <footer>
+    <p>&copy; 2025 Crystal Goulet. All rights reserved.</p>
+  </footer>
 </body>
 </html>
