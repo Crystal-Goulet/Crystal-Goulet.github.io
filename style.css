@@ -128,8 +128,9 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Align items to the left */
     gap: 40px;
+    padding-left: 60px; /* 👈 Push entire content to the right */
     flex-wrap: wrap;
 }
 
