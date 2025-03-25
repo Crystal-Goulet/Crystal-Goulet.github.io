@@ -135,10 +135,14 @@ input:checked + .slider:before {
 
 .photo-container {
     flex-shrink: 0;
-    width: 160px;
+    width: 140px;
     display: flex;
-    justify-content: flex-end; /* keeps the photo aligned left */
+    justify-content: center; /* keeps the photo aligned left */
 }
+
+.text-container {
+    text-align: center;
+  }
 
 .profile-pic {
     width: 140px;
