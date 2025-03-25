@@ -137,7 +137,7 @@ input:checked + .slider:before {
     flex-shrink: 0;
     width: 140px;
     display: flex;
-    justify-content: center; /* keeps the photo aligned left */
+    justify-content: flex-end; /* keeps the photo aligned left */
 }
 
 .text-container {
