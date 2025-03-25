@@ -128,10 +128,16 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: center;
     gap: 40px;
-    padding-left: 60px; /* 👈 Push entire content to the right */
     flex-wrap: wrap;
+}
+
+.photo-container {
+    flex-shrink: 0;
+    width: 160px;
+    display: flex;
+    justify-content: flex-end; /* keeps the photo aligned left */
 }
 
 .profile-pic {
